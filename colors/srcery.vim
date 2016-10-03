@@ -180,9 +180,9 @@ if version >= 700
   hi! link CursorColumn CursorLine
 
   " Tab pages line filler
-  call s:HL('TabLineFill', s:black, s:black)
+  call s:HL('TabLineFill', s:yellow, s:black)
   " Active tab page label
-  call s:HL('TabLineSel', s:black, s:black, s:bold)
+  call s:HL('TabLineSel', s:yellow, s:black, s:bold)
   " Not active tab page label
   hi! link TabLine TabLineFill
 
@@ -332,7 +332,7 @@ hi! link Typedef SrceryYellow
 
 if version >= 700
   " Popup menu: normal item
-  call s:HL('Pmenu', s:white, s:black)
+  call s:HL('Pmenu', s:white, s:gray_alt)
   " Popup menu: selected item
   call s:HL('PmenuSel', s:black, s:blue, s:bold)
   " Popup menu: scrollbar
