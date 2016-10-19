@@ -208,7 +208,7 @@ call s:HL('Visual',    s:none,  s:black, s:inverse)
 hi! link VisualNOS Visual
 
 call s:HL('Search',    s:black, s:yellow)
-call s:HL('IncSearch', s:black, s:yellow)
+call s:HL('IncSearch', s:black, s:bright_yellow)
 
 call s:HL('Underlined', s:blue, s:none, s:underline)
 
