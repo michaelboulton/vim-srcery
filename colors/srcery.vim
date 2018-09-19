@@ -35,7 +35,7 @@ let s:bright_cyan    = ["#53FDE9", 14]
 let s:white          = ["#FCE8C3", 15]
 
 " default xterm colors.
-let s:orange        = ['#D75F00', 166]  
+let s:orange        = ['#D75F00', 166]
 let s:bright_orange = ['#FF8700', 208]
 let s:hard_black    = ['#080808', 232]
 let s:gray_alt      = ['#4E4E4E', 239]
@@ -774,38 +774,39 @@ hi! link markdownIdDeclaration markdownLinkText
 
 " }}}
 " Haskell: {{{
+if get(g:, 'srcery_overwrite_haskell_colors', 0)
 
-" hi! link haskellType SrceryYellow
-" hi! link haskellOperators SrceryYellow
-" hi! link haskellConditional SrceryCyan
-" hi! link haskellLet SrceryYellow
-"
-hi! link haskellType SrceryFg1
-hi! link haskellIdentifier SrceryFg1
-hi! link haskellSeparator SrceryFg1
-hi! link haskellDelimiter SrceryFg4
-hi! link haskellOperators SrceryBlue
-"
-hi! link haskellBacktick SrceryYellow
-hi! link haskellStatement SrceryYellow
-hi! link haskellConditional SrceryYellow
+  " hi! link haskellType SrceryYellow
+  " hi! link haskellOperators SrceryYellow
+  " hi! link haskellConditional SrceryCyan
+  " hi! link haskellLet SrceryYellow
+  "
+  hi! link haskellType SrceryFg1
+  hi! link haskellIdentifier SrceryFg1
+  hi! link haskellSeparator SrceryFg1
+  hi! link haskellDelimiter SrceryFg4
+  hi! link haskellOperators SrceryBlue
+  "
+  hi! link haskellBacktick SrceryYellow
+  hi! link haskellStatement SrceryYellow
+  hi! link haskellConditional SrceryYellow
 
-hi! link haskellLet SrceryCyan
-hi! link haskellDefault SrceryCyan
-hi! link haskellWhere SrceryCyan
-hi! link haskellBottom SrceryCyan
-hi! link haskellBlockKeywords SrceryCyan
-hi! link haskellImportKeywords SrceryCyan
-hi! link haskellDeclKeyword SrceryCyan
-hi! link haskellDeriving SrceryCyan
-hi! link haskellAssocType SrceryCyan
+  hi! link haskellLet SrceryCyan
+  hi! link haskellDefault SrceryCyan
+  hi! link haskellWhere SrceryCyan
+  hi! link haskellBottom SrceryCyan
+  hi! link haskellBlockKeywords SrceryCyan
+  hi! link haskellImportKeywords SrceryCyan
+  hi! link haskellDeclKeyword SrceryCyan
+  hi! link haskellDeriving SrceryCyan
+  hi! link haskellAssocType SrceryCyan
 
-hi! link haskellNumber SrceryMagenta
-hi! link haskellPragma SrceryMagenta
+  hi! link haskellNumber SrceryMagenta
+  hi! link haskellPragma SrceryMagenta
 
-hi! link haskellString SrceryGreen
-hi! link haskellChar SrceryGreen
-
+  hi! link haskellString SrceryGreen
+  hi! link haskellChar SrceryGreen
+endif
 " }}}
 " Json: {{{
 
